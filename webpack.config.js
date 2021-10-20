@@ -9,8 +9,11 @@ module.exports = (env, args) => {
 
     const config = {
         entry: {
-            // style: ['./src/style.scss'],
-            // script: ['./src/main.js', './src/websocket.js'],
+            style: ['./node_modules/reseter.css/css/reseter.css',
+                './node_modules/bootstrap/dist/css/bootstrap-grid.min.css',
+                './src/main.scss'
+            ],
+            script: ['./src/main.js'],
             // templates: ['./src/message.js'],
         },
         output: {
@@ -50,7 +53,7 @@ module.exports = (env, args) => {
             new HtmlWebpackPlugin({
                 filename: 'index.html',
                 template: './src/index.html',
-                // chunks: ['style']
+                chunks: ['style', 'script']
             }),
         ],
         optimization: {
