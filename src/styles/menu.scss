@@ -1,0 +1,40 @@
+.menu {
+  height: 100%;
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child):before {
+      content: "";
+      right: -60px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 2px;
+      height: 31px;
+      background: rgba(0, 0, 0, 0.0001);
+      mix-blend-mode: soft-light;
+      border: 1px dashed #000000;
+    }
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+
+    &:hover {
+      filter: brightness(.8);
+      text-decoration: underline;
+    }
+  }
+}

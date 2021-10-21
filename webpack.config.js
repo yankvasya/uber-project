@@ -1,20 +1,18 @@
 const path =require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const template = require("./file.handlebars");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = (env, args) => {
     const isProd = args.mode === 'production';
 
     const config = {
         entry: {
-            style: ['./node_modules/reseter.css/css/reseter.css',
+            style: ['./node_modules/reseter.css/css/minireseter.min.css',
                 './node_modules/bootstrap/dist/css/bootstrap-grid.min.css',
                 './src/main.scss'
             ],
             script: ['./src/main.js'],
-            // templates: ['./src/message.js'],
         },
         output: {
             path: path.resolve(__dirname, 'docs'),
@@ -41,11 +39,6 @@ module.exports = (env, args) => {
                     test: /\.html$/i,
                     loader: 'html-loader',
                 },
-                {
-                    test: /\.(jpe?g|png|gif|svg)$/i,
-                    loader:'file-loader'
-                },
-                // { test: /\.handlebars$/, loader: "handlebars-loader" }
             ],
         },
         plugins: [

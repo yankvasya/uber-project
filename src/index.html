@@ -6,57 +6,70 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Uber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="header">
     <nav class="menu container">
         <ul class="menu__list">
-            <li class="menu__item"><a href="" class="menu__link">Главная</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Со своим автомобилем</a></li>
-            <li class="menu__item"><a href="" class="menu__link">На автомобиле компании</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Требования</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Оставить заявку</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Со своим автомобилем</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">На автомобиле компании</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Требования</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Оставить заявку</a></li>
         </ul>
     </nav>
 </header>
 
+
 <section class="hero">
-    <div class="head container">
-        <div class="head__main-info">
-            <a href="" class="logo">
-                <img src="#" alt="logo" class="logo__img">
-            </a>
-            <h3 class="head__title">Официальный партнер Uber в Москве</h3>
-        </div>
-        <div class="phone">
-            <div>
-                <h4 class="phone__description">Звоните нам ежедневно</h4>
-                <h2 class="phone__number">8 495 797 09 88</h2>
+    <div class="head">
+        <div class="container">
+            <div class="head__box row align-items-center">
+                <div class="head__main-info col-md-4 offset-md-1">
+                        <a href="#" class="logo">
+                            <img src="assets/logo/logo.png" alt="logo" class="logo__img">
+                        </a>
+                    <h3 class="head__title">Официальный партнер Uber в Москве</h3>
+                </div>
+                <div class="phone col-md-4 offset-md-2 row">
+                    <div class="col">
+                        <h4 class="phone__description">Звоните нам ежедневно</h4>
+                        <a href="tel:84957970988" class="phone__number">8 495 797 09 88</a>
+                    </div>
+                    <a href="#" class="phone__button btn col">Заказать звонок</a>
+                </div>
             </div>
-            <a href="#" class="phone__button">Заказать звонок</a>
         </div>
     </div>
 
-    <div class="hero__content">
-        <h1 class="hero__title">Компания Uber Partners</h1>
-        <h2 class="hero__info">Приглашаем водителей! На своем авто!</h2>
-        <p class="hero__description">
-            Компания UBER динамически развивающаяся.
-            Компания на рынке занимает лидирующее место среди таксомоторных компаний,
-            Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете.
-            Бонуcная система.
-            Помимо выполненной работы по заказам, компания начисляет бонусы за пиковое время.
-            Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве.
-            Водители у нас зарабатывают от 80000-120000 в месяц.
-        </p>
-        <a href="#" class="hero__send-button">Отправить заявку!</a>
+    <div class="hero__content container">
+        <div class="row col-md-10 offset-md-1">
+            <h1 class="hero__title">Компания Uber Partners!</h1>
+            <h2 class="hero__info">Приглашаем водителей! На своем авто!</h2>
+            <p class="hero__description">
+                Компания UBER динамически развивающаяся.
+                Компания на рынке занимает лидирующее место среди таксомоторных компаний,
+                Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете.
+                Бонуcная система.
+                Помимо выполненной работы по заказам, компания начисляет бонусы за пиковое время.
+                <br><br>
+                Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве.
+                Водители у нас зарабатывают от 80000-120000 в месяц.
+            </p>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="hero__send-button btn">Отправить заявку!</a>
+            </div>
+        </div>
     </div>
 </section>
 
 <section class="advantages">
     <div class="container">
-        <div class="advantages__precept">Преимущества</div>
+        <div class="advantages__precept precept">Преимущества</div>
         <h2 class="advantages__title">8 причин начать работать с нами</h2>
         <ul class="advantages__list">
             <li class="reason"><img src="#" alt="1" class="reason__img">
@@ -125,7 +138,7 @@
 
 <section class="possibilities">
     <div class="container">
-        <div class="possibilities__precept">Возможности</div>
+        <div class="possibilities__precept precept">Возможности</div>
         <h2 class="possibilities__title">Мобильное приложение убер</h2>
         <h4 class="possibilities__description">
             Сделайте заказ, совершайте поездку и оплатите ее стоимость, используя свой мобильный телефон
@@ -177,6 +190,8 @@
 
     <div class="conditions">
         <div class="container">
+            <div class="possibilities__precept precept">Возможности</div>
+
             <h2 class="conditions__title">Условия и требования</h2>
 
 <!--            Условия: со своим авто: -->
@@ -232,6 +247,7 @@
             </ul>
 
 <!--            Требование: -->
+            <h3 class="conditions__box-title">Требования:</h3>
             <ul class="conditions__list">
                 <li class="condition">
                     <img src="#" alt="check" class="condition__img">
