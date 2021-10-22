@@ -4,7 +4,7 @@
   align-items: center;
   cursor: pointer;
   background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
-  box-shadow: inset -4px -4px rgba(0, 0, 0, 0.12);
+  box-shadow: inset -3px -4px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 
   font-style: normal;
@@ -12,14 +12,19 @@
   font-size: 14px;
   color: #FFF;
   text-transform: uppercase;
+  transition: background .5s, color .5s;
 
   &:hover {
     color: rgba(255, 255, 255, 0.9);
+    background: linear-gradient(0deg, #1EACC7 0%, #4bd0f1 100%);
+    transition: all .5s;
   }
 
   &:active {
-    padding-top: 2px;
-    color: rgba(255, 255, 255, 0.75);
-    box-shadow: inset -2px -2px 0 0 rgba(0, 0, 0, 0.12);
+    padding-top: 4px;
+    color: rgba(243, 243, 243, 0.63);
+    box-shadow: inset -2px -3px 0 0 rgba(0, 0, 0, 0.12);
+    background: linear-gradient(0deg, #1690a4 0%, rgb(60, 161, 196) 50%, #196b7e 100%);
+    transition: color .5s, background-color .5s;
   }
 }
