@@ -2,18 +2,24 @@
   height: 100%;
 
   &__list {
-    display: flex;
-    justify-content: space-around;
+    width: 100%;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
   }
 
   &__item {
+    display: flex;
+    justify-content: center;
     position: relative;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    align-items: center;
 
     &:not(:last-child):before {
       content: "";
-      right: -60px;
+      right: 0px;
       top: 50%;
       transform: translate(-50%, -50%);
       position: absolute;
@@ -31,6 +37,7 @@
     font-size: 15px;
     line-height: 15px;
     color: #FFFFFF;
+    margin: 0 32px;
 
     &:hover {
       filter: brightness(.8);
