@@ -1,0 +1,47 @@
+.cities {
+  height: 95%;
+  padding: 48px 0 50px;
+  background: url('assets/img/world-bg.png') center center/contain no-repeat;
+  background-color: #080810;
+  background-size: auto, auto;
+  min-height: 850px;
+
+  .container {
+    height: 100%;
+  }
+
+  &__precept {
+    background-color: #fff;
+    color: #070716;
+  }
+
+  &__title {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__subtitle {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: #FFFFFF;
+  }
+
+  &__link {
+    height: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #1FBAD6;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

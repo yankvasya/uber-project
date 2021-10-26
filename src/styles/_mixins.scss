@@ -28,3 +28,20 @@
     transition: color .5s, background-color .5s;
   }
 }
+
+@mixin link_hover {
+  filter: brightness(.8);
+  text-decoration: underline;
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets){
+    @content
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones){
+    @content
+  }
+}

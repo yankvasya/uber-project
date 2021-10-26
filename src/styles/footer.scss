@@ -1,0 +1,51 @@
+.footer {
+  min-height: $footerMinHeight;
+  background: #fff;
+  padding: 12px 23px 30px;
+
+  &__content {
+    margin-top: 30px;
+  }
+
+  &__line {
+    width: 301px;
+    height: 7px;
+
+    background: #1FBAD6;
+  }
+
+  .container {
+
+    .language {
+
+      &__link {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #1FBAD6;
+
+        &:hover {
+          @include link_hover;
+        }
+      }
+    }
+  }
+
+  .download {
+    &__element {
+      &:not(:last-child) {
+        margin-right: 7px;
+      }
+    }
+
+    &__img {
+      height: 26px;
+      width: 94px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

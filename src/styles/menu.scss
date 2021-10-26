@@ -19,7 +19,7 @@
 
     &:not(:last-child):before {
       content: "";
-      right: 0px;
+      right: 0;
       top: 50%;
       transform: translate(-50%, -50%);
       position: absolute;
@@ -40,8 +40,37 @@
     margin: 0 32px;
 
     &:hover {
-      filter: brightness(.8);
-      text-decoration: underline;
+      @include link_hover;
+    }
+  }
+}
+
+.main-menu {
+  &__link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #070716;
+
+    &:hover {
+      @include link_hover;
+    }
+  }
+}
+
+.sub-menu {
+  margin: 15px 0 22px;
+
+  &__link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #999999;
+
+    &:hover {
+      @include link_hover;
     }
   }
 }

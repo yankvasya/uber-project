@@ -9,9 +9,23 @@ body {
 
 html, body {
   height: 100%;
+  font-size: $fontSize;
+
+
+  @include tablets {
+    font-size: $fontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $fontSize - 2px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 main {
-  min-height: (100vh - 3vh);
-  height: 100%;
+  height: calc(100%);
+  min-height: calc(100vh - 3vh); //3vh
 }
