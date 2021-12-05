@@ -1,0 +1,23 @@
+.socials {
+
+ .social {
+   &__link {
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     background: #070716;
+
+     &:hover {
+       transform: scale(1.1);
+     }
+   }
+
+   &__img {
+     height: auto;
+   }
+
+   &:not(:last-child) {
+     margin-right: 9px;
+   }
+ }
+}
